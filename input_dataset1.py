@@ -10,7 +10,7 @@ from datetime import datetime
 
 # --- Config ---
 CAMERA_INDEX = 0
-OUTPUT_DIR = "dataset"
+OUTPUT_DIR = "input_dataset1"
 TARGET_PER_COLOR = 50 #change as per your requirements
 # Colors / faces order (you can change order if needed)
 COLORS = ["white", "orange", "yellow", "red", "blue", "green"]
@@ -170,3 +170,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
