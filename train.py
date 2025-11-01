@@ -21,8 +21,8 @@ from collections import Counter
 # ==========================================================
 # Dataset Paths
 # ==========================================================
-ORIGINAL_DIR = "org_dataset1"
-AUGMENTED_DIR = "aug_dataset2"
+ORIGINAL_DIR = "org_dataset"
+AUGMENTED_DIR = "aug_dataset"
 USER_DIR = "user_dataset"
 
 MODEL_PATH = "model"
@@ -242,3 +242,4 @@ counts = Counter(y)
 for c, cnt in counts.items():
 
     print(f"{c:<8}: {cnt}")
+
