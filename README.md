@@ -71,3 +71,8 @@ Languages/Libraries: Python, OpenCV, NumPy, scikit-learn
 # 🚀 Outcome
 
 Once trained and executed, the program predicts cube colors accurately and provides clear solving steps — bringing your scrambled cube back to perfection!
+
+
+# ✨ Credits
+
+Developer: Yamini Shankari AJ 👩‍💻   
