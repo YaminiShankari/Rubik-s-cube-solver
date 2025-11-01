@@ -21,11 +21,11 @@ from collections import Counter
 # ==========================================================
 # Dataset Paths
 # ==========================================================
-ORIGINAL_DIR = r"D:\Yams\College\Sem_5\Project_main\proper\dataset\input_dataset1"
-AUGMENTED_DIR = r"D:\Yams\College\Sem_5\Project_main\proper\dataset\input_dataset2"
-USER_DIR = r"D:\Yams\College\Sem_5\Project_main\proper\user_dataset"
+ORIGINAL_DIR = "org_dataset1"
+AUGMENTED_DIR = "aug_dataset2"
+USER_DIR = "user_dataset"
 
-MODEL_PATH = r"D:\Yams\College\Sem_5\Project_main\proper\model"
+MODEL_PATH = "model"
 os.makedirs(MODEL_PATH, exist_ok=True)
 
 COLORS = ["white", "orange", "yellow", "red", "blue", "green"]
@@ -240,4 +240,5 @@ print(f"\n✅ Model, scaler, and label encoder saved successfully to: {MODEL_PAT
 print("--- Class Distribution ---")
 counts = Counter(y)
 for c, cnt in counts.items():
+
     print(f"{c:<8}: {cnt}")
