@@ -1,14 +1,56 @@
-# Rubik's cube solver
-In this project, using SVM (RBF kernel) and Kociemba algorithm the faces of each side of the cube is captured for color prediction and easy step-by-step instructions are given to solve the rubik's cube
+# 🧩 Rubik's cube solver
+This project uses SVM (RBF kernel) for color prediction and the Kociemba algorithm to generate the optimal solution for solving a Rubik’s Cube.
+Each face of the cube is captured through the webcam, analyzed for colors, and the program provides step-by-step instructions to solve it.
+   
+# 📂 Project Files Overview
+1️⃣ input_dataset1.py:
 
-1) input_dataset1.py: This file is used to create your own datasets. Place the <color> centered face as per the instructions and change the number of samples you want to take accordingly. This captures the hsv of each of the 9 stickers in the single face which will be stored as .npy files in the dataset folder. This is called the original dataset that will be used for model training.
+-Used to create your own dataset.    
+-Place the cube with the <color> center as instructed.   
+-Adjust the number of samples to capture.   
+-This script records the HSV values of the 9 stickers on that face and saves them as .npy files in the dataset folder.   
+-These form the original dataset for model training.   
 
-3) input_dataset2.py: This file is used to create augmented datasets. As there are a particular range of HSV for all the 6 colors, the number of samples specified files are created and stored as .npy files. These are called the augmented dataset which will also be used for model training.
+2️⃣ input_dataset2.py
 
-4) train.py: This is where the model is trained using SVM (Support Vector Machines) using RBF Kernel wherein the c and gamma values can be changed accordingly in such a way that the value of c should be less and the valye of gamma to be more. This depends on the mean hsv of your dataset files.
+-Used to create augmented datasets.  
+-Based on HSV ranges for the six colors, this script generates additional samples and stores them as .npy files.   
+-These serve as augmented data to improve the model’s accuracy.   
 
-5) color_prediction.py: In this file, the user is requested to show each face of the cube according to the <color> center just to make sure that the user gives each face. Make sure that the lightings and position of the cube is properly placed within the given gridlines, which will be the ROI (Region of Interest). The color prediction is shown to the user so that they can verify if the colors are predicted correctly and only when their consent is given, the capturing of the next face will be held. Once all the faces are predicted, the values are stored in captured_faces.npy (which will be created and saved in the same folder as this file exists in).
+3️⃣ train.py
 
-6) npy_file_checker.py: This is a simple file for user's convinence to check the colors saved in the captured_faces.npy.
+-Trains the SVM (Support Vector Machine) model with an RBF kernel.   
+-You can tune the parameters C and gamma.   
+-Typically, use a smaller C and a larger gamma.   
+-The optimal values depend on the mean HSV values from your dataset.   
 
-7) solution.py: This is the heart of the project where the captured_faces.npy file is loaded and configured in such a way that it gives the Kociemba algorithm (used to give the optimal solution for solving the Rubik's cube) the expected way the input should be. Once the auto-configuration of the faces are done, the algorithm is applied and easy step-by-step instructions are given to the user and is successfully solved.
+4️⃣ color_prediction.py
+
+-Used to capture and predict cube colors in real-time.   
+-The user is guided to show each cube face according to the <color> center.   
+-Ensure proper lighting and cube alignment within the ROI grid.   
+-After each face prediction, the user can confirm before moving to the next face.   
+-Once all six faces are captured, the data is saved as captured_faces.npy.   
+
+5️⃣ npy_file_checker.py
+
+-A simple utility to view the colors stored in captured_faces.npy.   
+-This helps verify that your captured data is correct before generating a solution.   
+
+6️⃣ solution.py
+
+The core of the project 💡
+
+-Loads the captured_faces.npy file and automatically configures the data into the format expected by the Kociemba algorithm.   
+-Generates an optimal move sequence to solve the cube.   
+-Displays easy, step-by-step instructions for the user to follow and successfully solve the Rubik’s Cube.   
+
+# 🧠 Tech Highlights
+
+Machine Learning: Support Vector Machines (RBF kernel)   
+Algorithm: Kociemba’s two-phase optimal solver   
+Languages/Libraries: Python, OpenCV, NumPy, scikit-learn   
+
+# 🚀 Outcome
+
+Once trained and executed, the program predicts cube colors accurately and provides clear solving steps — bringing your scrambled cube back to perfection!
