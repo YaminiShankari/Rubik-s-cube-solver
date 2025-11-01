@@ -27,8 +27,8 @@ BASE_HSV = {
 # ==========================================================
 ORIGINAL_SAMPLES_PER_COLOR = 1800     # From input_dataset1 (10800 / 6)
 AUGMENT_SAMPLES_PER_COLOR = 450       # ≈16–20% of original (84:16 ratio)
-FILES_PER_COLOR = 50                  # Create 50 .npy files per color
-OUTPUT_BASE = r"D:\Yams\College\Sem_5\Project_main\dataset\input_dataset2"
+FILES_PER_COLOR = 50                  # Create 50 .npy files per color; chage as per your requirement
+OUTPUT_BASE = "aug_dataset2"
 
 # ==========================================================
 # 🎨 HSV Jitter Settings (per color)
@@ -104,4 +104,5 @@ def main():
 # 🏁 Run
 # ==========================================================
 if __name__ == "__main__":
+
     main()
