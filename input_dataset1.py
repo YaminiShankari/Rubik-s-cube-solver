@@ -11,7 +11,7 @@ from datetime import datetime
 # --- Config ---
 CAMERA_INDEX = 0
 OUTPUT_DIR = "dataset"
-TARGET_PER_COLOR = 50
+TARGET_PER_COLOR = 50 #change as per your requirements
 # Colors / faces order (you can change order if needed)
 COLORS = ["white", "orange", "yellow", "red", "blue", "green"]
 # Size of ROI as fraction of smaller frame dimension
@@ -168,4 +168,5 @@ def main():
     print("All colors captured. Dataset saved in folder:", OUTPUT_DIR)
 
 if __name__ == "__main__":
+
     main()
