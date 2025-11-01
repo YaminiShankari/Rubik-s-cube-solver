@@ -58,7 +58,8 @@ pip install -r requirements.txt
 
 3️⃣ Run the color prediction or solution script
 python color_prediction.py
-python solution.py
+python solution.py   
+   
 ✅ Make sure Python (≥3.9) and pip are installed before running these commands.
 
 # 🧠 Tech Highlights
