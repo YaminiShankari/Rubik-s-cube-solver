@@ -45,6 +45,22 @@ The core of the project 💡
 -Generates an optimal move sequence to solve the cube.   
 -Displays easy, step-by-step instructions for the user to follow and successfully solve the Rubik’s Cube.   
 
+# ⚙️ Installation
+
+To set up and run the project on your system:
+
+1️⃣ Clone the repository
+git clone https://github.com/<your-username>/RubiksCubeSolver.git
+cd RubiksCubeSolver
+
+2️⃣ Install dependencies
+pip install -r requirements.txt
+
+3️⃣ Run the color prediction or solution script
+python color_prediction.py
+python solution.py
+✅ Make sure Python (≥3.9) and pip are installed before running these commands.
+
 # 🧠 Tech Highlights
 
 Machine Learning: Support Vector Machines (RBF kernel)   
