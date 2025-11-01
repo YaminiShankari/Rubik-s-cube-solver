@@ -14,8 +14,8 @@ from sklearn.utils import shuffle
 # ----------------------------------------------------------
 # Paths
 # ----------------------------------------------------------
-MODEL_PATH = r"D:\Yams\College\Sem_5\Project_main\proper\model"
-USER_DATASET_PATH = r"D:\Yams\College\Sem_5\Project_main\proper\user_dataset"
+MODEL_PATH = r"model"
+USER_DATASET_PATH = r"user_dataset"
 os.makedirs(USER_DATASET_PATH, exist_ok=True)
 
 svm_model = joblib.load(os.path.join(MODEL_PATH, "svm_rbf_model.pkl"))
@@ -226,4 +226,5 @@ def main():
 
 # ----------------------------------------------------------
 if __name__ == "__main__":
+
     main()
